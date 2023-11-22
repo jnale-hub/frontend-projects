@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        blob: "blob 7s infinite"
+                    },
+                    keyframes: {
+                        blob: {
+                            "0%": {
+                                transform: "translate(0px, 0px) scale(1)"
+                            },
+                            "33%": {
+                                transform: "translate(20px, -30px) scale(1.1)"
+                            },
+                            "66%": {
+                                transform: "translate(-20px, 30px) scale(0.9)"
+                            },
+                            "100%": {
+                                transform: "translate(0px, 0px) scale(1)"
+                            },
+                        }
+                    },
+                    colors: {
+                    }
+                }
+            }
+        }
+    </script> -->
+    <title>Soft Landing Page</title>
+</head>
+
+<body class="text-gray-800">
+    <!-- <style>
+        .delay-animation-2000 {
+            animation-delay: 2s;
+        }
+
+        .delay-animation-4000 {
+            animation-delay: 4s;
+        }
+    </style> -->
+    <nav>
+        <div class="flex justify-between p-10 py-16 items-center">
+            <h2 class="font-medium text-3xl">
+                qoals
+            </h2>
+            <a href="#"class="ml-5 mr-auto px-3 bg-green-200 text-green-500 text-lg rounded font-semibold">
+                beta
+            </a>
+            <div class="flex flex-row gap-10 font-semibold items-center text-lg">
+                <a href="#" class="text-green-500">
+                    Log in
+                </a>
+                <a href="#" class="py-2 px-7 bg-green-400 hover:bg-green-600 transition text-white rounded-lg">
+                    Try for free
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="flex flex-row items-center py-16 gap-10 overflow-x-clip">
+            <div class="max-w-xl flex flex-col gap-7 pl-10">
+                <h2 class="text-6xl font-semibold">
+                    Get aligned around your goals
+                </h2>
+                <p class="text-2xl text-gray-500">
+                    Simple & straightforward project management tool based on what really matters the most. Your goals.
+                </p>
+                <button
+                    class="py-5 px-10 transition bg-green-400 hover:bg-green-600 w-fit rounded-lg text-white text-lg font-semibold">
+                    Try beta for free
+                </button>
+            </div>
+            <div class="w-full relative ml-28">
+                <div
+                    class="absolute bg-purple-200 rounded-full w-96 h-96 top-0 -left-6 mix-blend-multiply filter blur-xl animate-blob">
+                </div>
+                <div
+                    class="absolute bg-pink-200 rounded-full w-96 h-96 top-0 -right-6 mix-blend-multiply filter blur-xl animate-blob delay-animation-2000">
+                </div>
+                <div
+                    class="absolute bg-yellow-200 rounded-full w-96 h-96 -bottom-10 left-0 mix-blend-multiply filter blur-xl animate-blob delay-animation-4000">
+                </div>
+                <img src="assets/hero.svg" class="relative w-full">
+            </div>
+        </section>
+
+        <section class="flex flex-row h-screen items-center p-10 gap-10">
+            <div class="space-y-5">
+                <img src="assets/goal-icon.svg" class="">
+                <h3 class="text-3xl font-semibold">
+                    Goal-based
+                </h3>
+                <p class="text-2xl text-gray-500">
+                    Democratize your roadmap by setting goals with context, instead of creating a wall of tasks.
+                </p>
+            </div>
+            <div class="space-y-5">
+                <img src="assets/team-icon.svg" class="">
+                <h3 class="text-3xl font-semibold">
+                    Collaborative
+                </h3>
+                <p class="text-2xl text-gray-500">
+                    Simple and effortless collaboration without any limitations. Everyone is invited to the party!
+                </p>
+            </div>
+            <div class="space-y-5">
+                <img src="assets/feed-icon.svg" class="">
+                <h3 class="text-3xl font-semibold">
+                    Transparent
+                </h3>
+                <p class="text-2xl text-gray-500">
+                    Get a birds-eye view of the progress you make as well as personal updates
+                </p>
+            </div>
+        </section>
+
+        <section class="flex flex-row h-screen items-center p-10 gap-10">
+            <div class="w-full max-w-2xl p-10 space-y-5 relative">
+                <div
+                    class="absolute bg-purple-100 rounded-full w-96 h-96 top-0 -left-6 mix-blend-multiply filter blur-xl animate-blob">
+                </div>
+                <div
+                    class="absolute bg-pink-100 rounded-full w-96 h-96 -bottom-10 -right-6 mix-blend-multiply filter blur-xl animate-blob delay-animation-2000">
+                </div>
+                <div class="relative bg-white px-8 py-7 rounded-xl flex items-center justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="mr-auto ml-3 text-2xl font-semibold text-gray-500">Introduce awesome feature</h4>
+                    <p class="py-1 px-3 bg-purple-200 text-purple-700 text-lg rounded-lg font-semibold">
+                        Long term</p>
+                </div>
+                <div class="relative bg-white px-8 py-7 rounded-xl flex items-center justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="mr-auto ml-3 text-2xl font-semibold text-gray-500">Start new marketing campaign</h4>
+                    <p class="py-1 px-3 bg-yellow-200 text-yellow-700 text-lg rounded-lg font-semibold">
+                        Short term</p>
+                </div>
+                <div class="relative bg-white px-8 py-7 rounded-xl flex items-center justify-between">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="mr-auto ml-3 text-2xl font-semibold text-gray-500">Update help documents</h4>
+                    <p class="py-1 px-3 bg-pink-200 text-pink-700 text-lg rounded-lg font-semibold">
+                        Urgent</p>
+                </div>
+            </div>
+            <div class="space-y-5 max-w-2xl">
+                <h3 class="text-5xl font-semibold">Set & prioritize your goals.</h3>
+                <p class="text-2xl text-gray-500">Turn your project management into a source of information instead of a
+                    list of frustration. Communicate
+                    the timeframe & impact of your goals and democratize your roadmap.</p>
+            </div>
+        </section>
+
+        <section class="flex flex-row h-screen items-center p-10 gap-10">
+            <div class="space-y-5 max-w-2xl pl-5">
+                <h3 class="text-5xl font-semibold">Add & delegate tasks.</h3>
+                <p class="text-2xl text-gray-500">Rome wasn't built in a day, neither will your goals. Divide your goals into small & meaningful chunks and delegate them. Let everyone see the bigger picture as well as their role in it.</p>
+            </div>
+            <div class="w-full max-w-2xl p-10 space-y-5 relative">
+                <div
+                    class="absolute bg-orange-100 rounded-full w-96 h-96 top-10 -left-6 mix-blend-multiply filter blur-xl animate-blob">
+                </div>
+                <div
+                    class="absolute bg-sky-100 rounded-full w-96 h-96 -bottom-10 -right-6 mix-blend-multiply filter blur-xl animate-blob delay-animation-2000">
+                </div>
+                <div class="relative w-fit bg-white px-8 py-7 rounded-xl flex items-center space-x-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-500">Design the feature</h4>
+                    <p class="py-1 px-3 bg-purple-200 text-purple-700 text-lg rounded-lg font-semibold">
+                        Long term</p>
+                </div>
+                <div class="relative w-fit bg-white px-8 py-7 rounded-xl flex items-center space-x-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-500">Implement to front-end</h4>
+                    <p class="py-1 px-3 bg-yellow-200 text-yellow-700 text-lg rounded-lg font-semibold">
+                        Short term</p>
+                </div>
+                <div class="relative w-fit bg-white px-8 py-7 rounded-xl flex items-center space-x-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-12 h-12 text-gray-300">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h4 class="text-2xl font-semibold text-gray-500">Update help docs</h4>
+                    <p class="py-1 px-3 bg-pink-200 text-pink-700 text-lg rounded-lg font-semibold">
+                        Urgent</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid place-items-center h-screen">
+            <div class="space-y-8 text-center">
+                <h2 class="text-6xl font-semibold">
+                    Become goal-oriented
+                </h2>
+                <p class="text-2xl text-gray-500">
+                    Reduce the noise and focus on what really matters the most. Your goals.
+                </p>
+                <button
+                    class="py-5 px-10 transition bg-green-400 hover:bg-green-600 w-fit rounded-lg text-white text-2xl font-semibold">
+                    Try beta for free
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-sm p-5 text-center">
+        Cloned from <a href="https://qoals.com/" target="_blank" class="underline">Qoals.com</a>.
+        Coded by <a href="https://github.com/jnale-hub" target="_blank" class="underline">John Mark Delima</a>.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
