@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <style>
+    @font-face {
+      font-family: 'Roboto-Regular';
+      src: url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
+    }
+  </style>
+</head>
+
+<body>
+  <main class="antialiased">
+
+    <div class="text-darkSlateGrey sm:bg-darkSlateGrey sm:py-16 sm:p-5 min-h-screen flex">
+
+      <section
+        class="flex m-auto bg-white rounded-[2rem] sm:p-5 max-w-4xl flex-col sm:flex-row-reverse gap-5 items-center"
+        id="prompt">
+        <div class="w-screen sm:hidden max-h-52 overflow-y-auto mb-auto rounded-b-3xl">
+          <img src="assets/images/illustration-sign-up-mobile.svg" class="w-full">
+        </div>
+        <div class="hidden sm:block max-w-[50%]">
+          <img src="assets/images/illustration-sign-up-desktop.svg" class="object-contain">
+        </div>
+
+        <article class="p-5 md:px-10 sm:max-w-md">
+          <h2 class="font-bold text-4xl md:text-5xl">
+            Stay updated!
+          </h2>
+          <p class="py-5">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="flex flex-col gap-3">
+            <li class="flex items-start gap-3">
+              <img src="assets/images/icon-list.svg">
+              Product discovery and building what matters
+            </li>
+            <li class="flex items-start gap-3">
+              <img src="assets/images/icon-list.svg">
+              Measuring to ensure updates are a success
+            </li>
+            <li class="flex items-start gap-3">
+              <img src="assets/images/icon-list.svg">
+              And much more!
+            </li>
+          </ul>
+          <form class="py-5" id="form">
+            <div class="flex justify-between">
+              <p class="font-bold text-sm mb-2">Email address</p>
+              <p class="hidden font-bold text-sm mb-2 text-tomato" id="error">Valid Email Required</p>
+            </div>
+            <input class="w-full border border-grey rounded-lg py-4 px-6 focus:outline-none focus:border-darkSlateGrey"
+              type="email" name="email" id="email" placeholder="email@company.com">
+          </form>
+          <button type="submit" id="successButton" onclick="validateEmail()"
+            class="w-full p-4 rounded-lg bg-darkSlateGrey hover:bg-tomato hover:shadow-2xl hover:shadow-orange-300 text-white font-semibold">Subscribe
+            to monthly newsletter</button>
+        </article>
+      </section>
+
+      <section id="success"
+        class="hidden flex flex-col p-5 pb-10 h-screen bg-white rounded-[2rem] max-w-md sm:h-auto sm:p-14 m-auto">
+        <div class="flex flex-col gap-5 my-auto">
+          <img src="assets/images/icon-list.svg" class="w-14">
+          <h2 class="font-bold text-4xl sm:text-5xl">
+            Thanks for subscribing!
+          </h2>
+          <p>
+            A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+            Please open it and click the button inside to confirm your subscription.
+          </p>
+        </div>
+        <button onclick="dismissMessage()"
+          class="mt-auto sm:mt-10 w-full p-4 rounded-lg bg-darkSlateGrey hover:bg-tomato hover:shadow-2xl hover:shadow-orange-300 text-white font-semibold">
+          Dismiss message
+        </button>
+      </section>
+    </div>
+  </main>
+
+  <footer class="text-sm p-5 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline">Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/jnale-hub" target="_blank" class="underline">John Mark Delima</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
