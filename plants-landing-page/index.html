@@ -12,12 +12,23 @@
             theme: {
                 extend: {
                     animation: {
-                        fall: "fall 3s"
+                        fall: "fall 3s",
+                        ascend: "ascend 1s"
                     },
                     keyframes: {
                         fall: {
                             "0%": {
                                 transform: "translate(0px, -50px)",
+                                opacity: 0
+                            },
+                            "100%": {
+                                transform: "translate(0px, 0px)",
+                                opacity: 1
+                            },
+                        },
+                        ascend: {
+                            "0%": {
+                                transform: "translate(0px, 30px)",
                                 opacity: 0
                             },
                             "100%": {
@@ -35,7 +46,7 @@
     <title>Plants Landing Page</title>
 </head>
 
-<body class="antialiased text-gray-700 bg-gray-50">
+<body class="antialiased text-gray-800 text-opacity-90 bg-gray-50 selection:bg-green-800 selection:bg-opacity-30 selection:text-green-900">
     <style>
     </style>
     <nav class="flex justify-between p-5 items-center">
@@ -60,17 +71,15 @@
     </nav>
 
     <main>
-        <section class="md:flex h-screen md:flex-row-reverse items-center sm:h-auto sm:pt-10 m-auto">
-            <div class="relative px-10 mx-auto w-fit">
-                <div class="plants-wrapper">
-                    <img src="assets/leaf1.webp" class="animate-fall animated-element absolute w-28 bottom-16 right-0">
-                    <img src="assets/leaf2.webp" class="animate-fall animated-element absolute w-14 top-0 right-20">
-                    <img src="assets/leaf3.webp" class="animate-fall animated-element absolute w-24 bottom-24 left-0">
-                    <img src="assets/plant.webp" class="w-80 lg:w-[30rem] xl:w-[60rem]">
-                </div>
+        <section class="md:flex min-h-screen md:flex-row-reverse sm:h-auto sm:pt-10 m-auto p-5 page-1">
+            <div class="relative px-10 mx-auto w-fit h-fit">
+                    <img src="assets/leaf1.webp" class="animate-fall animated-element absolute w-[25%] bottom-16 right-0">
+                    <img src="assets/leaf2.webp" class="animate-fall animated-element absolute w-[15%] top-0 right-20">
+                    <img src="assets/leaf3.webp" class="animate-fall animated-element absolute w-[25%] bottom-24 left-0">
+                    <img src="assets/plant.webp" class="w-80 lg:w-[30rem] xl:w-[60rem] animate-ascend">
             </div> 
 
-            <div class="space-y-3 md:space-y-7 text-center md:col-start-1 md:text-start sm:pl-10 sm:py-10 md:max-w-[66%]">
+            <div class="space-y-3 md:space-y-7 text-center md:col-start-1 md:text-start sm:pl-10 sm:py-10 md:max-w-[66%] animate-ascend">
                 <h2 class="text-4xl sm:text-[3.3rem] lg:text-6xl xl:text-8xl font-bold sm:leading-snug">
                     Spread <span class="text-green-700">green</span> in your life.
                 </h2>
@@ -93,11 +102,41 @@
                 </div>
             </div>
         </section>
-        <section class="h-screen">
-
+        <section class="py-10 space-y-5 m-10 sm:p-5">
+            <h6 class="uppercase text-gray-400 font-bold text-xs md:text-lg text-center pb-10">
+                As featured in
+            </h6>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-10 items-center">
+                <img src="assets/forbes.svg" class="">
+                <img src="assets/businessinsider.svg" class="">
+                <img src="assets/losangeles.svg" class="">
+                <img src="assets/realsimple.svg" class="">
+            </div>
         </section>
-        <section class="h-screen">
+        <section class="min-h-screen">
+            <h2 class="text-2xl sm:text-3xl xl:text-4xl font-bold py-8 text-green-800 text-center">
+                Plantito Plants
+            </h2>
+            <div class="mx-auto flex flex-wrap text-sm md:text-lg font-semibold justify-center gap-1 md:gap-3">
+                <a class="px-2 md:px-3 py-[.10rem] bg-gray-300 rounded-sm hover:bg-gray-400 hover:bg-opacity-60">
+                    All
+                </a>
+                <a class="px-2 py-[.10rem] bg-gray-300 rounded-sm hover:bg-gray-400 hover:bg-opacity-60">
+                    Indoor
+                </a>
+                <a class="px-2 py-[.10rem] bg-gray-300 rounded-sm hover:bg-gray-400 hover:bg-opacity-60">
+                    Outdoor
+                </a>
+                <a class="px-2 py-[.10rem] bg-gray-300 rounded-sm hover:bg-gray-400 hover:bg-opacity-60">
+                    Indoor/Outdoor
+                </a>
+            </div>
+            <div class="grid grid-cols-2">
+                <img>
+                <div>
 
+                </div>
+            </div>
         </section>
     </main>
 
