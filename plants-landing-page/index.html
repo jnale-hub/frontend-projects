@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    animation: {
+                        fall: "fall 3s"
+                    },
+                    keyframes: {
+                        fall: {
+                            "0%": {
+                                transform: "translate(0px, -50px)",
+                                opacity: 0
+                            },
+                            "100%": {
+                                transform: "translate(0px, 0px)",
+                                opacity: 1
+                            },
+                        }
+                    },
+                    colors: {
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Plants Landing Page</title>
+</head>
+
+<body class="antialiased text-gray-700 bg-gray-50">
+    <style>
+    </style>
+    <nav class="flex justify-between p-5 items-center">
+        <div class="">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+        <div>
+            <h2 class="text-2xl font-thin text-green-700">
+                Plantito
+            </h2>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+        </div>
+    </nav>
+
+    <main>
+        <section class="md:flex h-screen md:flex-row-reverse items-center sm:h-auto sm:pt-10 m-auto">
+            <div class="relative px-10 mx-auto w-fit">
+                <div class="plants-wrapper">
+                    <img src="assets/leaf1.webp" class="animate-fall animated-element absolute w-28 bottom-16 right-0">
+                    <img src="assets/leaf2.webp" class="animate-fall animated-element absolute w-14 top-0 right-20">
+                    <img src="assets/leaf3.webp" class="animate-fall animated-element absolute w-24 bottom-24 left-0">
+                    <img src="assets/plant.webp" class="w-80 lg:w-[30rem] xl:w-[60rem]">
+                </div>
+            </div> 
+
+            <div class="space-y-3 md:space-y-7 text-center md:col-start-1 md:text-start sm:pl-10 sm:py-10 md:max-w-[66%]">
+                <h2 class="text-4xl sm:text-[3.3rem] lg:text-6xl xl:text-8xl font-bold sm:leading-snug">
+                    Spread <span class="text-green-700">green</span> in your life.
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-500 lg:text-2xl">
+                    Beautiful plants for homes and offices
+                </p>
+                <button
+                    class="py-2 px-5 transition bg-green-700 hover:bg-green-800 w-fit rounded-lg text-white text-md lg:text-xl font-semibold">
+                    Shop now
+                </button>
+                <div class="flex justify-center gap-5 text-sm lg:text-xl md:justify-start">
+                    <div>
+                        <h4 class="text-2xl sm:text-3xl xl:text-4xl text-green-700">3202+</h4>
+                        <p>Customers</p>
+                    </div>
+                    <div>
+                        <h4 class="text-2xl sm:text-3xl xl:text-4xl text-green-700">5230+</h4>
+                        <p>Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="h-screen">
+
+        </section>
+        <section class="h-screen">
+
+        </section>
+    </main>
+
+    <footer class="text-sm p-5 text-center">
+        Cloned from <a href="https://plantito.vercel.app/" target="_blank" class="underline">Plantito.com</a>.
+        Coded by <a href="https://github.com/jnale-hub" target="_blank" class="underline">John Mark Delima</a>.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
